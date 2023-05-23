@@ -1,13 +1,13 @@
 const hamburguer = document.querySelector('.hamburguer')
-const main = document.querySelector('nav')
-console.log(main)
+const nav = document.querySelector('nav')
+console.log(nav)
 
 hamburguer.addEventListener('click', ()=>{
     hamburguer.classList.toggle('clicked');
-    main.classList.toggle('show');
+    nav.classList.toggle('show');
 })
 
 hamburguer.addEventListener('blur', ()=>{
     hamburguer.classList.remove('clicked')
-    main.classList.remove('show');
+    nav.classList.remove('show');
 })
